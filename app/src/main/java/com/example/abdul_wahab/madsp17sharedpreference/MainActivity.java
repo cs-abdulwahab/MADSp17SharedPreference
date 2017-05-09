@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
             SharedPreferences.Editor et = sp.edit();
             et.putInt("k1", 123);
             et.apply();
-
+//h
 
         }
 
