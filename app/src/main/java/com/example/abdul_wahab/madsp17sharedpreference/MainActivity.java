@@ -11,13 +11,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SharedPreferences sp = getSharedPreferences("abc", MODE_PRIVATE);
+        SharedPreferences sp = getSharedPreferences("settings", MODE_PRIVATE);
 
         if (sp != null && (sp.getInt("k1", -999) != 999)) {
 
             SharedPreferences.Editor et = sp.edit();
             et.putInt("k1", 123);
-            et.apply();
+            et.commit();
 
 
         }
