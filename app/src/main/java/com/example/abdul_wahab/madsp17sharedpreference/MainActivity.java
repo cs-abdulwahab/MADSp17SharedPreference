@@ -13,20 +13,14 @@ public class MainActivity extends AppCompatActivity {
 
         SharedPreferences sp = getSharedPreferences("abc", MODE_PRIVATE);
 
-        if (sp != null && (sp.getInt("k1",-999)!=999) ) {
+        if (sp != null && (sp.getInt("k1", -999) != 999)) {
 
             SharedPreferences.Editor et = sp.edit();
             et.putInt("k1", 123);
             et.apply();
-//h
+
 
         }
-
-
-
-
-
-
 
 
     }
